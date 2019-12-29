@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Imgur Album Browser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="src/styles.css">
+
+  <div id="usage">
+    <h1>Imgur Album Browser</h1>
+    <p>Append ?id=<code>[album id here]</code>. Example: <code>https://imgur.com/a/<mark>VemXvh0</mark></code> becomes <a href="?id=VemXvh0">?id=VemXvh0</a></p>
+    <p>Here are some examples to try:</p>
+    <ul>
+      <li><a href="?id=VemXvh0">Do It Yurtself</a></li>
+      <li><a href="?id=ue4Ax">Peeqo - The GIF Bot</a></li>
+      <li><a href="?id=RijZM">Rusty cargo van converted into a mobile studio</a></li>
+      <li><a href="?id=qZlOiI4">DIY Album Coasters</a></li>
+    </ul>
+  </div>
+
+  <div id="spinner" style="display: none;">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+
+  <h1 id="title"></h1>
+
+  <p id="stats"></p>
+
+  <div id="content">
+    <div id="steps">
+    </div>
+  </div>
+
+  <script src="src/get_album_data.js"></script>
+</body>
+</html>

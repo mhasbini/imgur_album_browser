@@ -1,0 +1,107 @@
+:root {
+  --stats-width: 1em;
+}
+
+/* 50 -> -54 */
+
+/* 30 -> -32 */
+
+#spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+#spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+#spinner .bounce1 {
+  animation-delay: -0.32s;
+}
+
+#spinner .bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { 
+    transform: scale(0);
+  } 40% { 
+    transform: scale(1.0);
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+#content {
+  margin: 1.5em;
+}
+
+#title {
+  text-align: center;
+}
+
+.step img,
+.step video {
+  max-width: 100%;
+}
+
+fieldset {
+  border: 2px solid black;
+  color: black;
+  border-radius: 4px;
+  margin: 1em 0;
+}
+
+legend {
+  padding: 0 .7em;
+}
+
+.unsupported {
+  background-color: red;
+}
+
+#stats {
+  font-family: monospace;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  #content {
+    margin: .1em;
+  }
+}
+
+#usage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #444;
+    color: #e4e4e4;
+  }
+
+  p, legend {
+    color: #e4e4e4;
+  }
+
+  fieldset {
+    border-color: white;
+  }
+}
+
+*/
